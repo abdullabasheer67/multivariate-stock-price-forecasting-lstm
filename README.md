@@ -69,7 +69,7 @@ Day 2–101 → predict Day 102
 Day 3–102 → predict Day 103
 
 
-Window size used: 100
+Window size used: 100 timesteps
 
 
 ---
@@ -77,6 +77,19 @@ Window size used: 100
 ### 3. Model Architecture
 
 The deep learning architecture consists of stacked LSTM layers with dropout for regularization.
+Input Sequence
+↓
+LSTM Layer
+↓
+Dropout
+↓
+LSTM Layer
+↓
+Dropout
+↓
+LSTM Layer
+↓
+Dense Output Layer
 
 Framework used:
 
